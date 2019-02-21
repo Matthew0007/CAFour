@@ -1,26 +1,13 @@
 <?php
-function get_products() {
+function get_customers() {
     global $db;
-    $query = 'SELECT * FROM products
-              ORDER BY productID';
+    $query = 'SELECT * FROM customers
+              ORDER BY customer_id';
     $statement = $db->prepare($query);
     $statement->execute();
-    $products = $statement->fetchAll();
+    $customers = $statement->fetchAll();
     $statement->closeCursor();
-    return $products;
-}
-
-function get_products_by_category($category_id) {
-    global $db;
-    $query = 'SELECT * FROM products
-              WHERE products.categoryID = :category_id
-              ORDER BY productID';
-    $statement = $db->prepare($query);
-    $statement->bindValue(":category_id", $category_id);
-    $statement->execute();
-    $products = $statement->fetchAll();
-    $statement->closeCursor();
-    return $products;
+    return $customers;
 }
 
 function get_product($product_id) {
