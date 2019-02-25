@@ -16,14 +16,24 @@ if ($action == 'list_products') {
     // Get the current category ID
     $category_id = filter_input(INPUT_GET, 'category_id', 
             FILTER_VALIDATE_INT);
+    $customer_id = filter_input(INPUT_GET, 'customer_id', 
+            FILTER_VALIDATE_INT);
+    
+    
     if ($category_id == NULL || $category_id == FALSE) {
         $category_id = 1;
+    }
+    if ($customer_id == NULL || $customer_id == FALSE) {
+        $customer_id = 1;
     }
     
     // Get product and category data
     $category_name = get_category_name($category_id);
     $categories = get_categories();
+    $customer_name = get_customer_name($customer_id);
+    $customers = get_customers();
     $products = get_products_by_category($category_id);
+    
 
     // Display the product list
     include('product_list.php');
