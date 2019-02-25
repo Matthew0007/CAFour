@@ -104,7 +104,7 @@ if ($action == 'list_products') {
 } 
 else if ($action == 'list_customers') {
     $customers = get_customers();
-    include('customers_list.php');
+    include('customer_list.php');
 }
 else if ($action == 'add_category') {
     $name = filter_input(INPUT_POST, 'name');
