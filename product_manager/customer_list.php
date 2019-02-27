@@ -17,7 +17,6 @@
                     <input type="hidden" name="action" value="delete_customer">
                     <input type="hidden" name="customer_id"
                            value="<?php echo $customer['customer_id']; ?>">
-                    
                     <input type="submit" value="Delete">
                 </form>
             </td>
@@ -26,17 +25,15 @@
     </table>
     <br />
 
-    <h2>Add Category</h2>
+    <h2>Add Customer</h2>
     <form id="add_customer_form"
           action="index.php" method="post">
         <input type="hidden" name="action" value="add_customer">
         
         <label>Customer:</label>
-        <select name="id">
-        <?php foreach ( $customer as $customer ) : ?>
+        <select name="customer_id">
+        <?php foreach ( $customers as $customer ) : ?>
             <option value="<?php echo $customer['productID']; ?>">
-                
-                
             </option>
         <?php endforeach; ?>
         </select>
