@@ -5,6 +5,7 @@
     <table>
         <tr>
             <th>Name</th>
+            <th>Customer ID</th>
             <th>&nbsp;</th>
         </tr>
         <?php foreach ($customers as $customer):?>
