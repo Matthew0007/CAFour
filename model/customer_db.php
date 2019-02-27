@@ -1,7 +1,7 @@
 <?php
 function get_customers() {
     global $db;
-    $query = 'SELECT * FROM customers
+    $query = 'SELECT * FROM customer
               ORDER BY customer_id';
     $statement = $db->prepare($query);
     $statement->execute();
@@ -10,10 +10,10 @@ function get_customers() {
 
 function get_customer_name($customer_id) {
     global $db;
-    $query = 'SELECT * FROM categories
+    $query = 'SELECT * FROM customer
               WHERE customer_id = :customerID';    
     $statement = $db->prepare($query);
-    $statement->bindValue(':customerID', $category_id);
+    $statement->bindValue(':customerID', $customer_id);
     $statement->execute();    
     $customer = $statement->fetch();
     $statement->closeCursor();    
@@ -23,7 +23,7 @@ function get_customer_name($customer_id) {
 
 function add_customers($name) {
     global $db;
-    $query = 'INSERT INTO customers (customer_name)
+    $query = 'INSERT INTO customer (customer_name)
               VALUES (:name)';
     $statement = $db->prepare($query);
     $statement->bindValue(':name', $name);
@@ -33,7 +33,7 @@ function add_customers($name) {
 
 function delete_customer($customer_id) {
     global $db;
-    $query = 'DELETE FROM customers
+    $query = 'DELETE FROM customer
               WHERE customer_id = :customerID';
     $statement = $db->prepare($query);
     $statement->bindValue(':customerID', $customer_id);
