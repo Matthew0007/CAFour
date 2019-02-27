@@ -10,7 +10,7 @@
         <?php foreach ($customers as $customer):?>
         <tr>
             <td><?php echo $customer['customer_name']; ?></td>
-<!--            <td><?php echo $customer['productID']; ?></td>-->
+            <td><?php echo $customer['customer_id']; ?></td>
             <td>
                 <form id="delete_product_form"
                       action="index.php" method="post">
