@@ -117,7 +117,20 @@ else if ($action == 'add_category') {
         add_category($name);
         header('Location: .?action=list_categories');  // display the Category List page
     }
-} else if ($action == 'delete_category') {
+} 
+else if ($action == 'add_customer') {
+    $name = filter_input(INPUT_POST, 'name');
+
+    // Validate inputs
+    if ($name == NULL) {
+        $error = "Invalid customer name. Check name and try again.";
+        include('../errors/error.php');
+    } else {
+        add_customer($name);
+        header('Location: .?action=list_customers');  // display the Category List page
+    }
+}
+else if ($action == 'delete_category') {
     $category_id = filter_input(INPUT_POST, 'category_id', 
             FILTER_VALIDATE_INT);
     delete_category($category_id);
