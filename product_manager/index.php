@@ -130,6 +130,12 @@ else if ($action == 'add_customer') {
         header('Location: .?action=list_customers');  // display the Category List page
     }
 }
+else if ($action == 'delete_customer') {
+    $customer_id = filter_input(INPUT_POST, 'customer_id', 
+            FILTER_VALIDATE_INT);
+    delete_customer($customers_id);
+    header('Location: .?action=list_customers');      // display the Category List page
+}
 else if ($action == 'delete_category') {
     $category_id = filter_input(INPUT_POST, 'category_id', 
             FILTER_VALIDATE_INT);
