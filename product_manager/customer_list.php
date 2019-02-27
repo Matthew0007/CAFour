@@ -31,7 +31,7 @@
         <input type="hidden" name="action" value="add_customer">
         
         <label>Customer:</label>
-        <select name="customer_id">
+        <select id="id">
         <?php foreach ( $customers as $customer ) : ?>
             <option value="<?php echo $customer['productID']; ?>">
             </option>
