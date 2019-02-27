@@ -17,6 +17,13 @@
         <input type="input" name="code"
                value="<?php echo $product['productCode']; ?>">
         <br>
+        
+        <br>
+
+        <label>Customer ID:</label>
+        <input type="input" name="code"
+               value="<?php echo $product['customer_id']; ?>">
+        <br>
 
         <label>Name:</label>
         <input type="input" name="name"

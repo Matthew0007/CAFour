@@ -16,6 +16,7 @@
                     <input type="hidden" name="action" value="delete_category">
                     <input type="hidden" name="category_id"
                            value="<?php echo $category['categoryID']; ?>">
+                    
                     <input type="submit" value="Delete">
                 </form>
             </td>

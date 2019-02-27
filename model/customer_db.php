@@ -21,12 +21,13 @@ function get_customer_name($customer_id) {
     return $customer_name;
 }
 
-function add_customers($name) {
+function add_customers($name, $product_id) {
     global $db;
-    $query = 'INSERT INTO customer (customer_name)
-              VALUES (:name)';
+    $query = 'INSERT INTO customer (customer_name, productID)
+              VALUES (:name, :id)';
     $statement = $db->prepare($query);
     $statement->bindValue(':name', $name);
+    $statement->bindValue(':id', $product_id);
     $statement->execute();
     $statement->closeCursor();    
 }
