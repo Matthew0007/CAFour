@@ -8,5 +8,6 @@ If you are not familiar abour MVC visit this link: https://www.youtube.com/watch
 
 token. Shopping
  <img src="images/tokener.jpeg" alt=""/>
-
+This is a snapshot of the token Shopping website
+ you are greeted with this when you enter the product manager option in the index
 <img src="images/Screenshot1.png" alt=""/>
