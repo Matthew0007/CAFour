@@ -24,3 +24,9 @@ Below is an example of the customer database and category database connecting to
 4. Import Project
 5. Now Run it.
 
+
+
+Refrence: Murachs Chapter 5 MVC Code.
+
+THANKS FOR INSTALLING!
+
