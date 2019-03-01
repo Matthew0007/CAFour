@@ -78,7 +78,17 @@ The view subdirectory contains:
 - database_error.php
 
 
+<h2> Lastly, The Controller</h2>
 
+![This is Model](/images/Inkedhmm_LI.jpg)
+Example Code? Okay you asked for it!
+
+    if ($product_id == NULL || $product_id == FALSE || $category_id == NULL ||
+            $category_id == FALSE || $code == NULL || $name == NULL ||
+            $price == NULL || $price == FALSE)
+
+The index file controls the actions:
+-index.php
 
 Refrence
 Refrence: Murachs Chapter 5 MVC Code.
