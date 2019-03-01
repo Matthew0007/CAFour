@@ -53,7 +53,9 @@ The model contains a subdirectory of files such as:
     add_customers($name, $product_id)
     get_customers()
 
+<h2> The View</h2>
 
+![This is Model](/images/view.jpeg)![This is Model](/images/view1.jpeg)
 Refrence
 Refrence: Murachs Chapter 5 MVC Code.
 
