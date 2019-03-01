@@ -12,9 +12,9 @@ token.
 
 
 
-*This is a snapshot of the token Shopping website
- you are greeted with this when you enter the product manager option in the index*
-        <img src="images/ProductList.jpeg" alt=""/>
+    *This is a snapshot of the token Shopping website
+    you are greeted with this when you enter the product manager option in the index*
+<img src="images/ProductList.jpeg" alt=""/>
 
 
 
@@ -23,7 +23,7 @@ the model is responsible for most of this hence having the most sql queries insi
 Below is an example of the customer database and category
  database connecting to the shop database, make sure you have something like this in tour model folder.
 
-        <img src="images/example.png" alt=""/>
+<img src="images/example.png" alt=""/>
 
 
 Installations:
