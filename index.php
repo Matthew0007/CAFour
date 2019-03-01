@@ -1,5 +1,5 @@
 <?php include 'view/header.php'; ?>
-<link href="main.css" rel="stylesheet" type="text/css"/>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
 <main>
     <h1>Menu</h1>
     <ul>
@@ -11,4 +11,3 @@
         </li>
     </ul>
 </main>
-<?php include 'view/footer.php'; ?>
