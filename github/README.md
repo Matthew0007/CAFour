@@ -38,7 +38,19 @@ Installations:
 
 <h2> Model, View and Controller </h2>
 
+<h2> The Model</h2>
+![Model](/images/model1.png)
 
+The model contains a subdirectory of files such as:
+- category_db.php
+- customer_db.php
+- database.php
+- product_db.php
+<h3>Example of some of function calls</h3>
+
+    get_customer_name($customer_id)
+    add_customers($name, $product_id)
+    get_customers()
 
 
 Refrence
