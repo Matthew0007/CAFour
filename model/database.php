@@ -1,5 +1,5 @@
 <?php
-    $dsn = 'mysql:host=localhost;dbname=shop';
+    $dsn = 'mysql:host=localhost;dbname=wp_ca3_Obadare_Taiwo';
     $username = 'mgs_user';
     $password = 'pa55word';
 
