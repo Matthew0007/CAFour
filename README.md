@@ -38,3 +38,10 @@ This is a snapshot of the token Shopping website
 This is the model that will deal with the data being retrieved from the database "shop" from the database called shops, 
 the model is responsible for most of this hence having the most sql queries inside.
 Below is an example of the customer database and category database connecting to the shop database, make sure you have something like this in tour model folder.
+
+<img src="images/example.png" alt=""/>
+
+
+
+
+Now
