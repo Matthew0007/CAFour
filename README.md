@@ -25,7 +25,7 @@ the model is responsible for most of this hence having the most sql queries insi
 Below is an example of the customer database and category
  database connecting to the shop database, make sure you have something like this in tour model folder.
 
-<img src="images/example.png" alt=""/>
+![example](/images/example1.jpeg)
 
 
 
