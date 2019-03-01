@@ -14,7 +14,8 @@ If you are not familiar abour MVC visit [this link](https://www.youtube.com/watc
 
     This is a snapshot of the token Shopping website
     you are greeted with this when you enter the product manager option in the index
-<img src="images/ProductList.jpeg" alt=""/>
+
+![token image](/images/ProductList.jpeg)
 
 
 
@@ -24,6 +25,7 @@ Below is an example of the customer database and category
  database connecting to the shop database, make sure you have something like this in tour model folder.
 
 <img src="images/example.png" alt=""/>
+
 
 
 Installations:
@@ -55,7 +57,17 @@ The model contains a subdirectory of files such as:
 
 <h2> The View</h2>
 
-![This is Model](/images/view.jpeg)![This is Model](/images/view1.jpeg)
+![This is Model](/images/view1.jpeg)
+
+The view subdirectory contains:
+- category_nav.php
+- footer.php
+- header.php
+*And also a View*
+- product_list.php
+- product_add.php
+- index.php
+- database_error.php
 Refrence
 Refrence: Murachs Chapter 5 MVC Code.
 
