@@ -17,15 +17,19 @@ Below is an example of the customer database and category database connecting to
 
         <img src="images/example.png" alt=""/>
 
+
+Installations:
+[XAMPP link](https://www.apachefriends.org/download.html)
+
         Before running
 1. Make sure you have the shop.sql file imported
-2. Install Xampp(Windows 10) or Mammp(OS X)
+2. Install [Xampp]((https://www.apachefriends.org/download.html) or Mammp(OS X)
 3. Start MysQl and Apache Actions
 4. Import Project
 5. Now Run it.
 
 
-
+Refrence
 Refrence: Murachs Chapter 5 MVC Code.
 
 THANKS FOR INSTALLING!
