@@ -83,7 +83,7 @@ The view subdirectory contains:
 
 <h2> Lastly, The Controller</h2>
 
-![This is Model](/images/Inkedhmm_LI.jpg)
+![This is Model](/images/hmm.jpeg)
 
 <h3>Example Code?</h3>
 
