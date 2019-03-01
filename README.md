@@ -81,6 +81,7 @@ The view subdirectory contains:
 <h2> Lastly, The Controller</h2>
 
 ![This is Model](/images/Inkedhmm_LI.jpg)
+
 Example Code? Okay you asked for it!
 
     if ($product_id == NULL || $product_id == FALSE || $category_id == NULL ||
@@ -88,10 +89,12 @@ Example Code? Okay you asked for it!
             $price == NULL || $price == FALSE)
 
 The index file controls the actions:
+
 -index.php
 
-Refrence
-Refrence: Murachs Chapter 5 MVC Code.
+<h1>Refrence</h1>
+
+_Murachs Chapter 5 MVC Code._
 
 THANKS FOR INSTALLING!
 
