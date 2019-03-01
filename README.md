@@ -58,6 +58,14 @@ The model contains a subdirectory of files such as:
 <h2> The View</h2>
 
 ![This is Model](/images/view1.jpeg)
+Visually displayed code example:
+
+    <h1>Menu</h1>
+    <ul>
+        <li>
+            <a href="product_manager">PRODUCT MANAGER</a>
+        </li>
+
 
 The view subdirectory contains:
 - category_nav.php
@@ -68,6 +76,10 @@ The view subdirectory contains:
 - product_add.php
 - index.php
 - database_error.php
+
+
+
+
 Refrence
 Refrence: Murachs Chapter 5 MVC Code.
 
