@@ -33,7 +33,7 @@ Installations:
 [XAMPP link](https://www.apachefriends.org/download.html)
 
         Before running
-1. Make sure you have the shop.sql file imported
+1. Make sure you have the wp_ca3_Obadare_Taiwo.sql file imported
 2. Install [Xampp]((https://www.apachefriends.org/download.html) or Mammp(OS X)
 3. Start MysQl and Apache Actions
 4. Import Project
