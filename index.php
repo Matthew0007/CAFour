@@ -6,8 +6,5 @@
         <li>
             <a href="product_manager">PRODUCT MANAGER</a>
         </li>
-        <li>
-            <a href="product_catalog">PRODUCT CATALOG</a>
-        </li>
     </ul>
 </main>
