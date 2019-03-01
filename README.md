@@ -50,6 +50,7 @@ The model contains a subdirectory of files such as:
 - customer_db.php
 - database.php
 - product_db.php
+
 <h3>Example of some of function calls</h3>
 
     get_customer_name($customer_id)
@@ -59,7 +60,8 @@ The model contains a subdirectory of files such as:
 <h2> The View</h2>
 
 ![This is Model](/images/view1.jpeg)
-Visually displayed code example:
+
+<h3>Visually displayed code example:</h3>
 
     <h1>Menu</h1>
     <ul>
@@ -83,7 +85,7 @@ The view subdirectory contains:
 
 ![This is Model](/images/Inkedhmm_LI.jpg)
 
-Example Code? Okay you asked for it!
+<h3>Example Code?</h3>
 
     if ($product_id == NULL || $product_id == FALSE || $category_id == NULL ||
             $category_id == FALSE || $code == NULL || $name == NULL ||
