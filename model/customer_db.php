@@ -35,9 +35,9 @@ function add_customers($name, $product_id) {
 function delete_customer($customer_id) {
     global $db;
     $query = 'DELETE FROM customer
-              WHERE customer_id = :customerID';
+              WHERE customer_id = :customer_id';
     $statement = $db->prepare($query);
-    $statement->bindValue(':customerID', $customer_id);
+    $statement->bindValue(':customer_id', $customer_id);
     $statement->execute();
     $statement->closeCursor();
 }
