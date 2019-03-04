@@ -15,9 +15,9 @@ function get_customer_name($customer_id) {
     $statement = $db->prepare($query);
     $statement->bindValue(':customerID', $customer_id);
     $statement->execute();    
-    $customer = $statement->fetch();
+    $customers = $statement->fetch();
     $statement->closeCursor();    
-    $customer_name = $customer['customer_name'];
+    $customer_name = $customers['customer_name'];
     return $customer_name;
 }
 
