@@ -149,8 +149,6 @@ else if ($action == 'delete_product') {
 
     // Validate inputs
     if ($name == NULL || $id = NULL) {
-        $id = 100;
-        $name = "test";
         $error = "Invalid customer name. Check name and try again.";
         include('../errors/error.php');
     } else {
