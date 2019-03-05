@@ -23,7 +23,7 @@
     </table>
     <br />
 
-    <h2>Add Customer</h2>
+<!--    <h2>Add Customer</h2>
     <form id="add_customer_form"
           action="index.php" method="post">
         <input type="hidden" name="action" value="add_customers">
@@ -33,7 +33,7 @@
         <label>id:</label>
         <input type="input" name="id">
         <input type="submit" value="Add">
-    </form>
+    </form>-->
 
     <p><a href="index.php?action=list_products">List Products</a></p>
 
