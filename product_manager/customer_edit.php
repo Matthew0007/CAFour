@@ -5,17 +5,14 @@
 
         <input type="hidden" name="action" value="update_customers">
 
-        <input type="hidden" name="customer_id"
-               value="<?php echo $customers['customer_id']; ?>">
+        <input type="hidden" name="customer_id"value="<?php echo $customers['customer_id']; ?>">
 
         <label>Customer_name:</label>
-        <input type="customer_id" name="customer_name"
-               value="<?php echo $customers['customer_name']; ?>">
+        <input type="customer_name" name="customer_name"value="<?php echo $customers['customer_name']; ?>">
         <br>
 
         <label>Product ID:</label>
-        <input type="input" name="product_id"
-               value="<?php echo $customers['productID']; ?>">
+        <input type="input" name="product_id"value="<?php echo $customers['productID']; ?>">
         <br>
         
 

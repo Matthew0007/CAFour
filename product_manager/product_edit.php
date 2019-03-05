@@ -5,17 +5,14 @@
 
         <input type="hidden" name="action" value="update_product">
 
-        <input type="hidden" name="product_id"
-               value="<?php echo $product['productID']; ?>">
+        <input type="hidden" name="product_id"value="<?php echo $product['productID']; ?>">
 
         <label>Category ID:</label>
-        <input type="category_id" name="category_id"
-               value="<?php echo $product['categoryID']; ?>">
+        <input type="category_id" name="category_id"value="<?php echo $product['categoryID']; ?>">
         <br>
 
         <label>Code:</label>
-        <input type="input" name="code"
-               value="<?php echo $product['productCode']; ?>">
+        <input type="input" name="code"value="<?php echo $product['productCode']; ?>">
         <br>
         
         <br>

@@ -6,13 +6,22 @@
         <tr>
             <th>Name</th>
             <th>Product ID</th>
-            
+
         </tr>
         <?php foreach ($customers as $customer) : ?>
         <tr>
             <td><?php echo $customer['customer_name']; ?></td>
             <td><?php echo $customer['productID']; ?> </td>
             <td>
+                <td><form action="." method="post">
+                    <input type="hidden" name="action"
+                           value="show_edit_formm">
+                    <input type="hidden" name="product_id"
+                           value="<?php echo $customer['productID']; ?>">
+                    <input type="hidden" name="customer_id"
+                           value="<?php echo $customer['customer_id']; ?>">
+                    <input type="submit" value="Edit">
+                </form></td>
                 <form id="delete_product_form" action="index.php" method="post">
                     <input type="hidden" name="action" value="delete_customers">
                     <input type="hidden" name="customer_id" value="<?php echo $customer['customer_id']; ?>">

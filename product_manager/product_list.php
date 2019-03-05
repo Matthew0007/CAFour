@@ -26,12 +26,9 @@
                 <td><?php echo $product['productName']; ?></td>
                 <td class="right"><?php echo $product['listPrice']; ?></td>
                 <td><form action="." method="post">
-                    <input type="hidden" name="action"
-                           value="show_edit_form">
-                    <input type="hidden" name="product_id"
-                           value="<?php echo $product['productID']; ?>">
-                    <input type="hidden" name="category_id"
-                           value="<?php echo $product['categoryID']; ?>">
+                    <input type="hidden" name="action"value="show_edit_form">
+                    <input type="hidden" name="product_id"value="<?php echo $product['productID']; ?>">
+                    <input type="hidden" name="category_id"value="<?php echo $product['categoryID']; ?>">
                     <input type="submit" value="Edit">
                 </form></td>
                 <td><form action="." method="post">
