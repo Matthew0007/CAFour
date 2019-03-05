@@ -1,7 +1,7 @@
 <?php include '../view/header.php'; ?>
 <main>
     <h1>Edit Customer</h1>
-    <form action="index.php" method="post" id="add_customer_form">
+    <form action="index.php" method="post" id="add_customer_formm">
 
         <input type="hidden" name="action" value="update_customers">
 
