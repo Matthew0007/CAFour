@@ -8,7 +8,7 @@ function get_customers() {
     return $statement; 
 }
 
-function get_customer_name($customer_id) {
+function get_customers_name($customer_id) {
     global $db;
     $query = 'SELECT * FROM customer
               WHERE customer_id = :customerID';    
@@ -32,7 +32,7 @@ function add_customers($name, $product_id) {
     $statement->closeCursor();    
 }
 
-function delete_customer($customer_id) {
+function delete_customers($customer_id) {
     global $db;
     $query = 'DELETE FROM customer
               WHERE customer_id = :customer_id';

@@ -40,4 +40,6 @@ function delete_category($category_id) {
     $statement->execute();
     $statement->closeCursor();
 }
+
+
 ?>

@@ -2,8 +2,9 @@
 
 require('../model/database.php');
 require('../model/product_db.php');
-require('../model/category_db.php');
 require('../model/customer_db.php');
+require('../model/category_db.php');
+
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
@@ -29,25 +30,29 @@ if ($action == 'list_products') {
     // Get product and category data
     $category_name = get_category_name($category_id);
     $categories = get_categories();
-    $customer_name = get_customer_name($customer_id);
+    $customer_name = get_customers_name($customer_id);
     $customers = get_customers();
     $products = get_products_by_category($category_id);
 
 
     // Display the product list
     include('product_list.php');
-} else if ($action == 'show_edit_form') {
+} 
+else if ($action == 'show_edit_form') {
     $product_id = filter_input(INPUT_POST, 'product_id', FILTER_VALIDATE_INT);
     if ($product_id == NULL || $product_id == FALSE) {
         $error = "Missing or incorrect product id.";
         include('../errors/error.php');
-    } else {
+    } 
+    
+    else {
         $product = get_product($product_id);
         include('product_edit.php');
     }
 } else if ($action == 'update_product') {
     $product_id = filter_input(INPUT_POST, 'product_id', FILTER_VALIDATE_INT);
     $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
+   
     $code = filter_input(INPUT_POST, 'code');
     $name = filter_input(INPUT_POST, 'name');
     $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
@@ -114,19 +119,21 @@ if ($action == 'list_products') {
 
     // Validate inputs
     if ($name == NULL || $id = NULL) {
-        $id = 1;
+        $id = 100;
         $name = "test";
         $error = "Invalid customer name. Check name and try again.";
         include('../errors/error.php');
     } else {
-        add_customer($name, $id);
+        add_customers($name, $id);
         header('Location: .?action=list_customers');  // display the Category List page
     }
-} else if ($action == 'delete_customer') {
+} 
+else if ($action == 'delete_customers') {
     $customer_id = filter_input(INPUT_POST, 'customer_id', FILTER_VALIDATE_INT);
-    delete_customer($customers_id);
+    delete_customers($customers_id);
     header('Location: .?action=list_customers');      // display the Category List page
-} else if ($action == 'delete_category') {
+} 
+else if ($action == 'delete_category') {
     $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
     delete_category($category_id);
     header('Location: .?action=list_categories');      // display the Category List page
