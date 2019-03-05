@@ -5,7 +5,7 @@
     <table>
         <tr>
             <th>Name</th>
-            <th>&nbsp;</th>
+            
         </tr>
         <?php foreach ($customers as $customer) : ?>
         <tr>
