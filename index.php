@@ -5,7 +5,7 @@
     <h1>Database</h1>
     <ul>
         <li>
-            <a href="product_manager">PRODUCT MANAGER</a>
+            <a href="product_manager">Product Manager</a>
         </li>
     </ul>
 </main>
