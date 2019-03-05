@@ -41,4 +41,18 @@ function delete_customers($customer_id) {
     $statement->execute();
     $statement->closeCursor();
 }
+
+function update_customers($customer_id, $product_id, $customer_name) {
+    global $db;
+    $query = 'UPDATE customer
+              SET productID = :product_id,
+                  customer_name = :customer_name
+               WHERE customer_id = :customer_id';
+    $statement = $db->prepare($query);
+    $statement->bindValue(':customer_id', $customer_id);
+    $statement->bindValue(':customer_name', $customer_name);
+    $statement->bindValue(':product_id', $product_id);
+    $statement->execute();
+    $statement->closeCursor();
+}
 ?>
