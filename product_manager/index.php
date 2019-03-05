@@ -49,7 +49,20 @@ else if ($action == 'show_edit_form') {
         $product = get_product($product_id);
         include('product_edit.php');
     }
-} else if ($action == 'update_product') {
+} 
+else if ($action == 'show_edit_formm') {
+    $customer_id = filter_input(INPUT_POST, 'customer_id', FILTER_VALIDATE_INT);
+    if ($customer_id == NULL || $customer_id == FALSE) {
+        $error = "Missing or incorrect product id.";
+        include('../errors/error.php');
+    } 
+    
+    else {
+        $customers = get_customers($customer_id);
+        include('customer_edit.php');
+    }
+}
+else if ($action == 'update_product') {
     $product_id = filter_input(INPUT_POST, 'product_id', FILTER_VALIDATE_INT);
     $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
     $code = filter_input(INPUT_POST, 'code');
@@ -80,7 +93,7 @@ else if ($action == 'update_customers') {
         $error = "Invalid customer data. Check all fields and try again.";
         include('../errors/error.php');
     } else {
-        update_product($product_id, $category_id, $code, $name, $price);
+        update_product($customer_id, $product_id, $customer_name);
 
         // Display the Customer List page for the current category
         header("Location: .?customer_id=$customer_id");
