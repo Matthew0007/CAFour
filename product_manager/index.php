@@ -52,7 +52,6 @@ else if ($action == 'show_edit_form') {
 } else if ($action == 'update_product') {
     $product_id = filter_input(INPUT_POST, 'product_id', FILTER_VALIDATE_INT);
     $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
-   
     $code = filter_input(INPUT_POST, 'code');
     $name = filter_input(INPUT_POST, 'name');
     $price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
