@@ -68,7 +68,25 @@ else if ($action == 'show_edit_form') {
         // Display the Product List page for the current category
         header("Location: .?category_id=$category_id");
     }
-} else if ($action == 'delete_product') {
+} 
+else if ($action == 'update_customers') {
+    $customer_id = filter_input(INPUT_POST, 'customer_id', FILTER_VALIDATE_INT);
+    $product_id_id = filter_input(INPUT_POST, 'product_id', FILTER_VALIDATE_INT);
+    $customer_name = filter_input(INPUT_POST, 'code');
+
+    // Validate the inputs
+    if ($product_id == NULL || $product_id == FALSE || $customer_id == NULL ||
+            $customer_id == FALSE || $customer_name == NULL || $customer_name == FALSE) {
+        $error = "Invalid customer data. Check all fields and try again.";
+        include('../errors/error.php');
+    } else {
+        update_product($product_id, $category_id, $code, $name, $price);
+
+        // Display the Customer List page for the current category
+        header("Location: .?customer_id=$customer_id");
+    }
+}
+else if ($action == 'delete_product') {
     $product_id = filter_input(INPUT_POST, 'product_id', FILTER_VALIDATE_INT);
     $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
     if ($category_id == NULL || $category_id == FALSE ||
