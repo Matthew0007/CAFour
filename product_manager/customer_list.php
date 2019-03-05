@@ -1,7 +1,7 @@
 <?php include '../view/header.php'; ?>
 <main>
 
-    <h1>Caustomer List</h1>
+    <h1>Customer List</h1>
     <table>
         <tr>
             <th>Name</th>
