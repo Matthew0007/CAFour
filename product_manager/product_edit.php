@@ -30,7 +30,7 @@
         <br>
 
         <label>&nbsp;</label>
-        <input type="submit" value="Save Changes">
+        <input type="submit" value="Save">
         <br>
     </form>
     <p><a href="index.php?action=list_products">View Product List</a></p>
