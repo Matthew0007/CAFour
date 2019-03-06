@@ -1,7 +1,7 @@
 <?php include '../view/header.php'; ?>
 <main>
 
-    <h1>Product List</h1>
+    <h1>Product List<p><a href="?action=list_customers">List Customers</a></p></h1>
 
     <aside>
         <!-- display a list of categories -->
@@ -45,7 +45,7 @@
         </table>
         <p><a href="?action=show_add_form">Add Product</a></p>
         <p><a href="?action=list_categories">List Categories</a></p>
-        <p><a href="?action=list_customers">List Customers</a></p>
+        
     </section>
 
 </main>
